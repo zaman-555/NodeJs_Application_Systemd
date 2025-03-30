@@ -3,8 +3,8 @@ Description=Start Node.js App
 After=network.target
 
 [Service]
-ExecStart=/usr/local/nvm/versions/node/v18.16.1/bin/node /root/code/node/server.js
-WorkingDirectory=/root/code/node
+ExecStart=/usr/local/nvm/versions/node/v18.16.1/bin/node /root/NodeJs_Application_Systemd/node/server.js
+WorkingDirectory=/root/NodeJs_Application_Systemd/node
 Restart=on-failure
 User=root
 # Environment=NODE_ENV=production
