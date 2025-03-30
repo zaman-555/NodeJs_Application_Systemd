@@ -1,0 +1,14 @@
+[Unit]
+Description=Start Node.js App
+After=network.target
+
+[Service]
+ExecStart=/usr/local/nvm/versions/node/v18.16.1/bin/node /root/code/node/server.js
+WorkingDirectory=/root/code/node
+Restart=on-failure
+User=root
+# Environment=NODE_ENV=production
+# EnvironmentFile=/path/to/env/file
+
+[Install]
+WantedBy=multi-user.target
