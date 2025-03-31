@@ -8,8 +8,12 @@
 .env.production
 
 # Dependency directories
+# .gitignore
 node_modules/
-jspm_packages/
+.env
+*.env
+package-lock.json
+package.json
 
 # Log files
 *.log
@@ -72,7 +76,6 @@ out/
 debug/
 
 # Package manager specific
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
